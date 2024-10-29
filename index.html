@@ -9,7 +9,7 @@
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,12 +17,12 @@
             font-family: 'Arial', sans-serif;
             color: #f5f5f5;
             text-align: center;
-            overflow: hidden;
+            overflow-x: hidden;
         }
         .container {
             width: 90%;
             max-width: 700px;
-            padding: 40px;
+            padding: 30px;
             background: #424242;
             border: 2px solid #f44336;
             border-radius: 12px;
@@ -35,13 +35,13 @@
             100% { box-shadow: 0px 0px 20px rgba(244, 67, 54, 0.5); }
         }
         h1 {
-            font-size: 2.5rem;
-            margin: 0 0 20px;
+            font-size: 2rem;
+            margin: 0 0 15px;
             color: #f44336;
         }
         p {
-            font-size: 1.2rem;
-            margin: 0 0 15px;
+            font-size: 1rem;
+            margin: 0 0 10px;
         }
         .highlight {
             color: #ff5252;
@@ -49,9 +49,9 @@
         }
         .threat {
             display: inline-block;
-            padding: 10px 20px;
-            margin-top: 10px;
-            font-size: 1.1rem;
+            padding: 8px 15px;
+            margin-top: 8px;
+            font-size: 1rem;
             font-weight: bold;
             color: #fff;
             background-color: #d32f2f;
@@ -67,9 +67,9 @@
         }
         .button {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 12px 25px;
             margin-top: 20px;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: #fff;
             background-color: #f44336;
@@ -83,10 +83,37 @@
             box-shadow: 0px 0px 20px rgba(244, 67, 54, 0.7);
         }
         .disclaimer {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             margin-top: 15px;
             color: #bdbdbd;
             opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+            .button {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
